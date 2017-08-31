@@ -2,15 +2,15 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Shengbo Zou.
 """
 ########################################################################
-# TODO: 1.
+# Done: 1.
 # On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
+####################################################################
+import rosegraphics as rg
 ########################################################################
-
-########################################################################
-# TODO: 2.
+# Done: 2.
 #
 #  You should have RUN the PREVIOUS module and READ its code.
 #  (Do so now if you have not already done so.)
@@ -27,4 +27,18 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #  fixing them at either this session OR at the NEXT session.
 #
 #  Don't forget to COMMIT your work by using  VCS ~ Commit and Push.
-########################################################################
+######################################################################
+window = rg.TurtleWindow()
+Ezio = rg.SimpleTurtle('turtle')
+Ezio.speed = 100
+Ezio.pen.color = 'red'
+Ezio.pen.thickness = 20
+Ezio.left(72)
+for k in range(5):
+    for i in range(5):
+        Ezio.forward(200)
+        Ezio.right(144)
+    Ezio.right(72)
+
+window.close_on_mouse_click()
+
